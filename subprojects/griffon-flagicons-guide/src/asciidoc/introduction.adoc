@@ -1,0 +1,33 @@
+
+[[_introduction]]
+= Introduction
+
+Provides a shortcut for adding flag icons for all counties listed at Wikipedia's {link_iso_3166} country codes.
+Icons based on Mark Jame's {link_flagicons}.
+
+Country names are i18n aware. The default language is English, there are no additional language versions.
+Provide a suitable +griffon.plugins.flagicons.countrynames_<locale>.properties+ file for your Locale if
+you wish to use a different translation for a Country name.
+
+[discrete]
+== Missing flags
+
+The following country codes have no flags assigned to them because the Flag icon collection does not provide one.
+
+ * AQ - Antartica
+ * GG - Guernsey
+ * IM - Isle of Man
+ * JE - Jersey
+
+[discrete]
+== Non-standard country names
+
+This plugin assigns the following non standard country names to some additional flags found in the Flag icon set.
+Be warned that these country codes are not sanctioned by ISO 3166-1 alpha-2.
+
+ * CT - Catalonia
+ * EN - England
+ * EU - European Union
+ * WL - Wales
+ * XL - Scotland
+

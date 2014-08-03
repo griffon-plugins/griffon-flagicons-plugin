@@ -1,0 +1,5 @@
+
+:link_iso_3166: link:http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2[ISO_3166-1_alpha-2, window="_blank"]
+:link_flagicons: link:http://www.famfamfam.com/lab/icons/flags/[FamFamFam Flag Icons, window="_blank"]
+:api_link_flagicon_javafx: link:api/griffon/javafx/support/flagicons/FlagIcon.html[griffon.javafx.support.flagicons.FlagIcon, window="_blank"]
+:api_link_flagicon_swing: link:api/griffon/swing/support/flagicons/FlagIcon.html[griffon.swing.support.flagicons.FlagIcon, window="_blank"]
