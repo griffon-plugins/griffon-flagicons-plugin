@@ -1,5 +1,6 @@
 = griffon-flagicons-plugin
-:version: 1.0.0-SNANPSHOT
+:version: 1.0.0.SNAPSHOT
+:linkattrs:
 
 image:https://travis-ci.org/griffon/griffon-flagicons-plugin.png?branch=master["Build Status", link="https://travis-ci.org/griffon/griffon-flagicons-plugin"]
 image:https://coveralls.io/repos/griffon/griffon-flagicons-plugin/badge.png["Coverage Status", link="https://coveralls.io/r/griffon/griffon-flagicons-plugin"]
