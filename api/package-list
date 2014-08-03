@@ -1,0 +1,8 @@
+griffon.builder.javafx
+griffon.builder.swing
+griffon.builder.swing.factory
+griffon.javafx.support.flagicons
+griffon.plugins.flagicons
+griffon.swing.support.flagicons
+org.codehaus.griffon.runtime.javafx.flagicons
+org.codehaus.griffon.runtime.swing.flagicons
