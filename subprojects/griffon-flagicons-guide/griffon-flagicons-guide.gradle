@@ -141,7 +141,7 @@ task generateIconCheatSheet << {
     file.withReader { Reader reader -> props.load(reader) }
 
     String document = '''
-    [[icon_sheat_cheet]]
+    [[icon_cheat_cheet]]
     = Icon Cheat Sheet
 
     The following table shows all available icons.
