@@ -6,7 +6,7 @@ Provides a shortcut for adding flag icons for all counties listed at Wikipedia's
 Icons based on Mark Jame's {link_flagicons}.
 
 Country names are i18n aware. The default language is English, there are no additional language versions.
-Provide a suitable +griffon.plugins.flagicons.countrynames_<locale>.properties+ file for your Locale if
+Provide a suitable `griffon.plugins.flagicons.countrynames_<locale>.properties` file for your Locale if
 you wish to use a different translation for a Country name.
 
 [discrete]
