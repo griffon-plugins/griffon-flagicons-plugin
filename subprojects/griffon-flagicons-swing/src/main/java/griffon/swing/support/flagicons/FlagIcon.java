@@ -19,15 +19,22 @@ import griffon.plugins.flagicons.Country;
 
 import javax.annotation.Nonnull;
 import javax.swing.ImageIcon;
+import java.awt.Toolkit;
 import java.net.URL;
 
+import static griffon.util.GriffonNameUtils.requireNonBlank;
 import static java.util.Objects.requireNonNull;
 
 /**
  * @author Andres Almiray
  */
 public class FlagIcon extends ImageIcon {
+    private static final String ERROR_COUNTRY_NULL = "Argument 'country' must not be null";
     private Country country;
+
+    public FlagIcon() {
+        this(Country.EU);
+    }
 
     public FlagIcon(@Nonnull Country country) {
         super(toURL(country));
@@ -40,7 +47,7 @@ public class FlagIcon extends ImageIcon {
 
     @Nonnull
     private static URL toURL(@Nonnull Country country) {
-        requireNonNull(country, "Argument 'country' must not be null.");
+        requireNonNull(country, ERROR_COUNTRY_NULL);
         String resource = country.asResource();
         return Thread.currentThread().getContextClassLoader().getResource(resource);
     }
@@ -48,5 +55,15 @@ public class FlagIcon extends ImageIcon {
     @Nonnull
     public Country getCountry() {
         return country;
+    }
+
+    public void setCountry(@Nonnull Country country) {
+        this.country = requireNonNull(country, ERROR_COUNTRY_NULL);
+        setImage(Toolkit.getDefaultToolkit().getImage(toURL(country)));
+    }
+
+    public void setCountry(@Nonnull String code) {
+        requireNonBlank(code, "Argument 'code' must not be blank");
+        setCountry(Country.findByCode(code));
     }
 }
