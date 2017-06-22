@@ -31,3 +31,5 @@ Be warned that these country codes are not sanctioned by ISO 3166-1 alpha-2.
  * WL - Wales
  * XL - Scotland
 
+Griffon version: {griffon-version}
+
